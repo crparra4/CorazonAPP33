@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iniciar_sesion_heartbeat"
+    tools:context=".Menu_Principal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Heartbeat"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:id="@+id/buscar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_redondear"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/ButtonBuscar"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_buscar"
+                android:scaleType="fitCenter" />
+
+            <EditText
+                android:id="@+id/textView2"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:hint="@android:string/search_go"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="179dp"
+            android:layout_height="443dp"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="163dp"
+                android:layout_height="162dp"
+                android:background="@drawable/bton_fondo_color"
+                android:scaleType="centerCrop"
+                android:src="@drawable/reloj1"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="162dp"
+                android:layout_height="216dp"
+                android:background="@drawable/color_layau_verde"
+                android:scaleType="fitCenter"
+                android:src="@drawable/grafica"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="173dp"
+            android:layout_height="443dp"
+            android:orientation="vertical"
+            android:translationX="190dp"
+            android:translationY="-440dp">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="162dp"
+                android:layout_height="216dp"
+                android:background="@drawable/color_layau_verde"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calendario"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="160dp"
+                android:layout_height="162dp"
+                android:background="@drawable/bton_fondo_color"
+                android:scaleType="centerCrop"
+                android:src="@drawable/running">
+
+            </ImageButton>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

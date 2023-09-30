@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registrarse"
+    tools:context=".Registro_User">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circulo_imagen"
+            android:src="@drawable/imagen_de_corazon" />
+
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_redondear"
+                android:scaleType="centerCrop"
+                android:src="@drawable/usuario" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/Nombre_user"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bton_fondo_color"
+                android:hint=" Username"
+                android:textColor="@color/white"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_redondear"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/email" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+
+            <EditText
+                android:id="@+id/regis_email"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bton_fondo_color"
+                android:hint=" Email"
+                android:textColor="@color/white"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:ems="20"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/password"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_redondear"
+                android:scaleType="centerInside"
+                android:src="@drawable/password"/>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/regis_password"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bton_fondo_color"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/number"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_redondear"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/inumber" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/regis_number"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bton_fondo_color"
+                android:hint=" Contacto number"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/regis_registrar"
+            android:backgroundTint="#BC3124"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFFFF"
+            android:elevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:text="Registrarse"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
