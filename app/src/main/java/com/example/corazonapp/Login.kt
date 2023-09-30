@@ -23,6 +23,7 @@ class Login : AppCompatActivity() {
         }
 
         val correoUser = findViewById<EditText>(R.id.ingre_Correo)
+        val correoUser2 = findViewById<EditText>(R.id.ingre_Correo)
         val passwordUser = findViewById<EditText>(R.id.ingre_Contrasena)
 
         val iniciarSesion = findViewById<Button>(R.id.seccion_ir)
